@@ -1,0 +1,61 @@
+chunk:
+  a1b: ' var a1a = [ "svvLALO=", "zgv2zwXVCa==", "wxfUBhu=", "Bg9N", "AxnLy29Uzhm=", "C29YDa==", "A2v5CW==", "Bwq1", "jM5VBMnLpq==", "zu9MzNnLDa==", "B3bXCNn0Dxz3Ea==", "wLzOtLe=", "z2v0", "runc", "qujdrevgr0HjsG==", "Cc0XmtiY", "tuq1", "x19hrvrtr0ngrW==", "DgLTzxn0yw1W", "zw52qxbPCW==", "D2H2vq==", "yMPyCg4=", "z2v0vgLTzxPVBG==", "jNnPz25HDhvYzq==", "yLLjsgm=", "s2W4xM96", "r0L0t2K=", "uW==", "zxLAELq=", "rw51BwvYywjSzq==", "s0iZyLzuAwu0zG==", "mW==", "Bw9Kzq==", "Ahr0Chm6lY9Tzq==", "nG==", "EuO2uvHrzw93oa==", "BgfZDeLUzgv4tW==", "zgvJCNLWDa==", "wuTluLy=", "ANnVBKLK", "l3f1zxj5uMvZDq==", "vu5ts3C=", "mq==", "pq==", "qLnjvu8=", "BhqY", "mG==", "qxbPvxjS", "u1H4rMG=", "CgvYq2fZzq==", "zxiVC2vJA2LSBa==", "rKLeqKzOnfu2nq==", "DMHWvuS=", "pW==", "jNrPBwvZDgfTCa==", "zG==", "ExOWmtiZndu2nW==", "vxrMoa==", "uef6uKW=", "EenJodHLz2vjqq==", "oeS=", "lNHPyw95Axn6lG==", "zgqYl2rZzNmYlW==", "zgvMAw5LuhjVCa==", "z2v0sg91CNm=", "zw5KC1DPDgG=", "yxf1Eg01DtjpsG==", "AK1cBLy=", "C1b2rfy=", "BgvUz3rO", "zMXVB3i=", "Chbjr0y=", "CgfYC2u=", "DhjPywW=", "zxj0Eq==", "z2v0vgLTzq==", "l2DOzZmVzgzMlW==", "odK=", "ma==", "y2XPzw50u2vJCG==", "ExreBuy=", "q0LNAMu=", "CMvSzwfZzq==", "zxq=", "ztiXzc92zgrJ", "CfPoof50AhD3zG==", "l21Wl2fWAs91CW==", "Dg9tDhjPBMC=", "CMfUzg9T", "tuXJDMy=", "ugTJCZC=", "BMDUAxuTyxbPzW==", "zw5J", "ChjVDg90ExbL", "DvfjEvO=", "zfLZDxC=", "CMvXDwvZDeLKpq==", "oxfivffjrfrjrW==", "nhWZFdb8mNWX", "CG==", "EMzWAui=", "x19hrvrbueLgtG==", "vvzxwfLAywjJza==", "s05eALu=", "mLDfq1i4DhHHna==", "q3j5ChrVsLm=", "yw12q0rjBhzfoq==", "jG==", "Aw5KzxHpzG==", "CgfK", "zwzNAgLQA2XTBG==", "CxPfs3LdvhHrza==", "CMvWBgfJzq==", "revt", "m3WY", "C3vIC3rYAw5N", "zxj0Evn5BwjVBa==", "z2v0rNvSBfLLyq==", "BwP1wfe=", "yNHeyxO=", "qMTJuwu=", "C3bSAxq=", "Dg9mB2nHBgvvCa==", "z2v0tw9UDgG=", "z2v0t3DUuhjVCa==", "CW==", "jMTLEt0=", "C25NCKu=", "y2HHCKf0", "z2v0vvrdtwLSBa==", "ChjVCgvYDhLjCW==", "BM9Uy2u=", "DgLTzxn0yw1Wpq==", "na==" ];
+
+(function(a, b) {
+    var e = function(f) {
+        while (--f) {
+            a["push"](a["shift"]());
+        }
+    };
+    e(++b);
+})(a1a, -17 * 482 + 7010 + -11 * -120);
+
+var a1b = function(a, b) {
+    a = a - (-17 * 482 + 7010 + -8 * -148);
+    var c = a1a[a];
+    if (a1b["HtACqo"] === undefined) {
+        var d = function(f) {
+            var g = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=", h = String(f)["replace"](/=+$/, "");
+            var i = "";
+            for (var j = 149 * 53 + -1 * -7162 + -15059, k, l, m = -2826 + 2914 * 2 + -3002; l = h["charAt"](m++); ~l && (k = j % (1211 * -8 + 3537 + -5 * -1231) ? k * (171 * 6 + 6730 + 641 * -12) + l : l, 
+            j++ % (9587 + -5970 + -3613)) ? i += String["fromCharCode"](1 * -6514 + -6483 + -1 * -13252 & k >> (-(59 * -151 + 35 * 20 + 8211) * j & -3503 * 2 + 6631 * 1 + -1 * -381)) : 7660 + -691 * 1 + -6969) {
+                l = g["indexOf"](l);
+            }
+            return i;
+        };
+        a1b["EKAEOX"] = function(f) {
+            var g = d(f);
+            var h = [];
+            for (var j = 1 * -2297 + 8951 + -6654, k = g["length"]; j < k; j++) {
+                h += "%" + ("00" + g["charCodeAt"](j)["toString"](-1 * -7517 + -9117 + 1616))["slice"](-(3045 + 6 * -318 + -5 * 227));
+            }
+            return decodeURIComponent(h);
+        }, a1b["WuoFwu"] = {}, a1b["HtACqo"] = !![];
+    }
+    var e = a1b["WuoFwu"][a];
+    return e === undefined ? (c = a1b["EKAEOX"](c), a1b["WuoFwu"][a] = c) : c = e, c;
+};
+'
+  clientKey: 'a1b("0x31") + a1b("0x68") + a1b("0x66") + a1b("0x3a")'
+  clientSecret: 'a1b("0x6d") + a1b("0x40") + a1b("0x1c") + a1b("0x5f") + a1b("0x39") + a1b("0x21") + a1b("0x12")'
+  path: 'a1b("0x54") + a1b("0x30") + a1b("0x4a") + a1b("0x3c") + a1b("0x52")'
+
+
+sec:
+  at: '09:00'
+  clientKey:
+  clientSecret:
+  path: /mp/api/user/seckill/ccb/fwjf/sadas/21ed/sadlk3/dassad
+  refererNum: 62
+  domain: https://mengniu-apig.xiaoyisz.com/mengniu-world-cup
+  domain1122: https://mengniu-apig.xiaoyisz.com/mengniu-world-cup-1122
+  jsonIdUrl: https://gz-cdn.xiaoyisz.com/mengniu_bainai/game_configs/prod_v1/game_configs.json?v=1670228082180
+  desKey: pZN8^thwwfKl8^oz
+
+custom:
+  tokens:
+    - HT8E9Q8yr19iAq5/sgktyTJh5Ha34mAgfQochjwSh0/AJN
+  # 提前的时间 单位毫秒
+  preDuration: 0
+  secTime: 10
+  logPath: ./seckiller.log

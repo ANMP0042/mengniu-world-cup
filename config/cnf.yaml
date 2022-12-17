@@ -40,11 +40,10 @@ var a1b = function(a, b) {
   clientSecret: 'a1b("0x6d") + a1b("0x40") + a1b("0x1c") + a1b("0x5f") + a1b("0x39") + a1b("0x21") + a1b("0x12")'
   path: 'a1b("0x54") + a1b("0x30") + a1b("0x4a") + a1b("0x3c") + a1b("0x52")'
 
-
 sec:
   at: '09:00'
-  clientKey:
-  clientSecret:
+  clientKey: odzedoYiN5DLKJHGYFYGFJfRaQRzMUKV4qVaKRm
+  clientSecret: IjQP8ED8kGavOIKJKHSUHDIOWJDOWIkpuKXa7afrj96w64dgUiP8ujtL7byHtlGFU3Fv
   path: /mp/api/user/seckill/ccb/fwjf/sadas/21ed/sadlk3/dassad
   refererNum: 62
   domain: https://mengniu-apig.xiaoyisz.com/mengniu-world-cup
@@ -54,8 +53,8 @@ sec:
 
 custom:
   tokens:
-    - HT8E9Q8yr19iAq5/sgktyTJh5Ha34mAgfQochjwSh0/AJN
+    - HT8E9Q8yr19iAq5/sgktyTJh5Ha34mAgfQochjwSh0/AJNY4B0mFoh59nd9uALSU
   # 提前的时间 单位毫秒
-  preDuration: 0
-  secTime: 10
+  preDuration: 50
+  secTime: 1000
   logPath: ./seckiller.log

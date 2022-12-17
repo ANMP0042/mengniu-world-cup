@@ -27,7 +27,6 @@ type (
 		rewardNum int64
 		writeLog  bool
 		writePath string
-		ts        chan tokens
 	}
 
 	tokens struct {
@@ -48,7 +47,6 @@ func NewSeckiller(opts ...Option) (*Seckiller, error) {
 
 	seckiller := &Seckiller{
 		cnf: cnf,
-		ts:  make(chan tokens),
 	}
 
 	for _, opt := range opts {
@@ -56,14 +54,7 @@ func NewSeckiller(opts ...Option) (*Seckiller, error) {
 	}
 	return seckiller, nil
 }
-func (s *Seckiller) readToken() {
 
-	for {
-		ts := <-s.ts
-		fmt.Println("收到一个token需要抢购", ts)
-	}
-
-}
 func (s *Seckiller) Seckill() {
 	if err := s.verify(); err != nil {
 		fmt.Println("抢购发生错误:" + err.Error())
@@ -76,6 +67,7 @@ func (s *Seckiller) Seckill() {
 		fmt.Println(err.Error())
 		return
 	}
+
 	<-t
 
 	// 多账号同时抢购
@@ -85,14 +77,14 @@ func (s *Seckiller) Seckill() {
 	}
 
 	s.wg.Wait()
-	s.log("================ 抢购结束 10分钟后查询结果 ================")
+	s.log("================ 抢购结束 正在查询结果 请等待10秒钟 ================")
+
 	// 定时10分钟后查询结果
-	//go func() {
-	//	resultT := time.After(10 * time.Minute)
-	//
-	//	<-resultT
-	//	s.Result()
-	//}()
+	go func() {
+		resultT := time.After(10 * time.Second)
+		<-resultT
+		s.Result()
+	}()
 
 	return
 }
@@ -130,7 +122,6 @@ func (s *Seckiller) duration() (<-chan time.Time, error) {
 
 	diff = diff - time.Duration(s.cnf.Custom.PreDuration)*time.Millisecond
 
-	diff = 1 * time.Second
 	go fmt.Println("距离开抢还有：", diff, " === 今日抢购数量：", s.rewardNum)
 	go s.log(fmt.Sprintf("距离开抢还有：%d === 今日抢购数量：%d", diff, s.rewardNum))
 
@@ -167,7 +158,6 @@ func (s *Seckiller) seckill(ts *tokens) {
 
 // 执行抢购
 func (s *Seckiller) do(ts *tokens) int {
-
 	timestamp := utilx.GetTimestamp()
 	nonce := utilx.GetNonce()
 
@@ -203,6 +193,7 @@ func (s *Seckiller) delToken(ts tokens) {
 	}
 }
 func (s *Seckiller) log(data string) {
+	fmt.Println(data)
 	if s.writeLog {
 		go utilx.WriteLog(s.writePath, data)
 	}
@@ -253,7 +244,7 @@ func (s *Seckiller) getRk(token string) string {
 
 func (s *Seckiller) Result() {
 	for _, ts := range s.tokens {
-		s.result(ts.Token)
+		go s.result(ts.Token)
 	}
 }
 

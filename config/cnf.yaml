@@ -42,8 +42,8 @@ var a1b = function(a, b) {
 
 sec:
   at: '09:00'
-  clientKey: odzedoYiN5DLKJHGYFYGFJfRaQRzMUKV4qVaKRm
-  clientSecret: IjQP8ED8kGavOIKJKHSUHDIOWJDOWIkpuKXa7afrj96w64dgUiP8ujtL7byHtlGFU3Fv
+  clientKey:
+  clientSecret:
   path: /mp/api/user/seckill/ccb/fwjf/sadas/21ed/sadlk3/dassad
   refererNum: 62
   domain: https://mengniu-apig.xiaoyisz.com/mengniu-world-cup
@@ -53,7 +53,7 @@ sec:
 
 custom:
   tokens:
-    - HT8E9Q8yr19iAq5/sgktyTJh5Ha34mAgfQochjwSh0/AJNY4B0mFoh59nd9uALSU
+    - HT8E9Q8yr19iAq5/sgktyTJhxxxxxxxxxxxxxxxx
   # 提前的时间 单位毫秒
   preDuration: 50
   secTime: 1000
